@@ -1,10 +1,14 @@
-# Test de recrutement pour les développeurs Java
+# Test de recrutement pour les développeurs Front-End
 
-Bienvenue dans le projet de test de recrutement pour la société Eqinov. L'objectif est de tester vos compétences en développement Java sur un projet simplifié avec les différents frameworks que nous utilisons. 
+Bienvenue dans le projet de test de recrutement pour la société Eqinov. L'objectif est de tester vos compétences en développement d'interfaces web dans avec les outils que nous utilisons au quotidien.
 
-## Pré-requis et installation
-### Outils de build
-Pour réaliser les développements demandés vous aurez besoin :
+## Pré-requis
+### Installation de Java
+Pour les besoins du test, nous utilisons un framework java permettant de lancer une api mockée : java doit donc être installé sur votre machine. Pour vérifier, lancer la commande DOS suivante :
+----
+	java -version
+----
+le système doit vous indiquer la version de java installée sur votre poste.
 
 - de la version 8 du jdk
 - d'un outil de gestion de dépendances et de compilation, le projet est configuré pour utiliser maven ou gradle. A Eqinov, nous utilisons gradle. Voici les liens d'installation, des deux outils :
