@@ -46,10 +46,18 @@ Eqinov souhaite mettre à disposition de ses clients un nouvel écran pour son a
 * d'afficher les données de manière conviviale
 * d'avoir une interface responsive (visualisable sur PC, tablette et smartphone)
 
-### Exercice 1 : réalisation d'interface web
-Nous avons mis à votre disposition, via une api, l'ensemble des données nécessaire à la réalisation de cette interface web, celle ci est disponible à l'adress suivante : http://localhost:8080/eqinov/front/test.
+### Stack technique 
+Nous souhaitons réaliser cet nouvel écran avec les technologies suivantes :
+* HTML 5
+* CSS 3
+* javascript
 
-Après réflexion avec notre service marketing, nous souhaitons afficher les données de la façon suivante :
+Vous pouvez utiliser des outils complémentaires comme jQuery,Bootstrap si vous le souhaitez ou tout autre framework dans le respect des technologies mentionnées précédemment.
+
+### Exercice 1 : réalisation d'interface web
+Nous avons mis à votre disposition, via une api, l'ensemble des données nécessaire à la réalisation de cette interface web, celle ci est disponible à l'adresse suivante : http://localhost:8080/eqinov/front/test.
+
+En consultation avec notre service marketing, nous souhaitons afficher les données de la façon suivante :
 
 image::images/mockup.png[]
 
@@ -57,55 +65,17 @@ Vous devrez respecter les règles graphiques suivantes mis en place dans notre a
 
 image::images/Règles graphiques.JPG[]
 
-Nous souhaiterions connaître l'évolution de sa consommation mensuelle pour l'année 2019. Pour cela, vous devrez ajouter un tableau sous le graphique de consommation :
+### Exercice 2 : modification de mockup
+Nous avons la possibilité de récupérer l'historique des consommations réalisée et l'historique des consommations prévisionnelle de ce client sur une api d'un de nos partenaires. Cet historique est disponible pour plusieurs années et serait très utile à l'équipe opérationnelle afin d'étudier l'évolution de sa consommation. 
 
-- avec une colonne pour chaque mois
-- avec le nom du mois en-tête du tableau
-- la valeur de la consommation mensuelle pour le mois concerné
-
-NOTE: les données présentes en base sont en MW et à pas 10 minutes
-
-NOTE: pour calculer la consommation mensuelle il faut d'abord prendre la consommation horaire en faisant la moyenne des puissances disponibles pour une heure puis sommer les puissances horaires sur le mois. 
-
-
-### Exercice 2
-Nous souhaiterions connaître la consommation annuelle pour l'année 2019. 
-
-Pour cela, ajouter un libellé dans l'ihm de la manière suivante : (Consommation annuelle : xxx MWh)
-
-### Exercice 3
-Nous avons la possibilité de récupérer l'historique de consommation de 2018 sur une api d'un de nos partenaires. Cet historique serait très utile à l'équipe opérationnelle afin d'étudier l'évolution de sa consommation. 
-
-Vous trouverez dans le dossier src/test/java une classe s'appelant MockApi.java.
-
-Pour lancer cette api, depuis Eclipse, clic droit -> Run as -> Java Application.
-
-Voici l'accès à l'api : http://localhost:2345/api/conso
-
-Pour cet exercice, vous devrez donc :
-
-- ajouter une action dans l'ihm qui permettra de récupérer la consommation via cette api
-- désérialiser l'api en objet java
-- persister l'historique des consommations récupérées dans la base de données
-
-Pour vérifier que votre développement fonctionne : 
-
-- l'année 2018 doit s'afficher dans la liste de sélection
-- la consommation 2018 et l'évolution de la consommation mensuelle doit s'afficher si on choisit l'année 2018 dans la liste de selection
-
-NOTE: l'api retourne des données json
-
-### Exercice 4 (seulement valable si vous postulez au poste de développeur/chef de projet)
-
-L'équipe opérationnelle souhaite enrichir l'ihm existante dont voici l'expression de besoins :
+L'équipe opérationnelle souhaite enrichir l'ihm existante avec les éléments suivants :
 
 - Avoir une courbe affichant la consommation réalisée et la consommation prévisionnelle
-- Pouvoir choisir les pas de téléchargement des courbes : 10 min, 1/2h et 1h
+- Télécharger les données de consommation et de prévision à pas 10 min, 1/2h et 1h
 - Mentionner la consommation totale sur l’année
 - Pouvoir effectuer une sélection de date de visualisation de la courbe : jour, mois, trimestre, année. 
 
 Question n°1 : faire une maquette d’interface logicielle présentant le maximum d’éléments qui vous paraissent pertinents en lien avec la demande de l’équipe métier.
 
-Question n°2 : rédiger une spécification et préciser les règles à appliquer par les développeurs. 
+Question n°2 : préciser les règles à appliquer sur l'ihm. 
 
-Question n°3 : lister les points nécessitant un échange avec l’équipe métier pour préciser leur demande et pouvoir compléter la spécification fonctionnelle. 
