@@ -8,8 +8,35 @@ Pour les besoins du test, nous utilisons un framework java permettant de lancer 
 ----
 	java -version
 ----
-le système doit vous indiquer la version de java installée sur votre poste.
+Le système doit vous indiquer la version de java installée sur votre poste. Si ce n'est pas le cas, rendez-vous à la page suivante pour l'installer : https://www.java.com/fr/download/
 
+### Utilisation de l'api mockée
+l'api mockée retourne les données au format json qui vous seront utiles pour réaliser le premier exercice. 
+Tout est disponible dans le dossier mock, où est présent le jar de wiremock (le framework que nous utilisons pour mockée une api).
+Pour lancer l'api, lancer la commande DOS suivante :
+----
+	java -jar wiremock-standalone-2.24.1.jar 
+----
+la console DOS doit afficher l'écran suivant indiquant que tout fonctionne correctement :
+----
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+ /$$      /$$ /$$                     /$$      /$$                     /$$
+| $$  /$ | $$|__/                    | $$$    /$$$                    | $$
+| $$ /$$$| $$ /$$  /$$$$$$   /$$$$$$ | $$$$  /$$$$  /$$$$$$   /$$$$$$$| $$   /$$
+| $$/$$ $$ $$| $$ /$$__  $$ /$$__  $$| $$ $$/$$ $$ /$$__  $$ /$$_____/| $$  /$$/
+| $$$$_  $$$$| $$| $$  \__/| $$$$$$$$| $$  $$$| $$| $$  \ $$| $$      | $$$$$$/
+| $$$/ \  $$$| $$| $$      | $$_____/| $$\  $ | $$| $$  | $$| $$      | $$_  $$
+| $$/   \  $$| $$| $$      |  $$$$$$$| $$ \/  | $$|  $$$$$$/|  $$$$$$$| $$ \  $$
+|__/     \__/|__/|__/       \_______/|__/     |__/ \______/  \_______/|__/  \__/
+
+port:                         8080
+enable-browser-proxying:      false
+disable-banner:               false
+no-request-journal:           false
+verbose:                      false
+----
 - de la version 8 du jdk
 - d'un outil de gestion de dépendances et de compilation, le projet est configuré pour utiliser maven ou gradle. A Eqinov, nous utilisons gradle. Voici les liens d'installation, des deux outils :
  * maven : https://maven.apache.org/maven-release/download.cgi
