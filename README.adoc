@@ -4,9 +4,10 @@ Bienvenue dans le projet de test de recrutement pour la société Eqinov. L'obje
 
 ## Pré-requis
 ### Installation de Java
-Pour les besoins du test, nous utilisons un framework java permettant de lancer une api mockée : java doit donc être installé sur votre machine. Pour vérifier, lancer la commande DOS suivante :
+Pour les besoins du test, nous utilisons un framework java permettant de lancer une api mockée : java doit donc être installé sur votre machine. 
+Pour vérifier, lancer la commande DOS suivante :
 ----
-	java -version
+java -version
 ----
 Le système doit vous indiquer la version de java installée sur votre poste. Si ce n'est pas le cas, rendez-vous à la page suivante pour l'installer : https://www.java.com/fr/download/
 
@@ -15,7 +16,7 @@ l'api mockée retourne les données au format json qui vous seront utiles pour r
 Tout est disponible dans le dossier mock, où est présent le jar de wiremock (le framework que nous utilisons pour mockée une api).
 Pour lancer l'api, lancer la commande DOS suivante :
 ----
-	java -jar wiremock-standalone-2.24.1.jar 
+java -jar wiremock-standalone-2.24.1.jar 
 ----
 la console DOS doit afficher l'écran suivant indiquant que tout fonctionne correctement :
 ----
@@ -42,14 +43,19 @@ l'api est disponible à l'adresse suivante : http://localhost:8080/eqinov/front/
 ## Travail demandé
 ### Contexte
 Eqinov souhaite mettre à disposition de ses clients un nouvel écran pour son application dreams qui gère la flexibilité des consommation électriques de ses clients. Les objectifs de ce nouvel écran est :
-- d'afficher les données de manière conviviale
-- d'avoir une interface responsive (visualisable sur PC, tablette et smartphone)
+* d'afficher les données de manière conviviale
+* d'avoir une interface responsive (visualisable sur PC, tablette et smartphone)
 
 ### Exercice 1 : réalisation d'interface web
-Nous avons mis à votre disposition via une api l'ensemble des données nécessaire à la réalisation de cette interface web, celle ci est disponible à l'adress suivante : http://localhost:8080/eqinov/front/test
+Nous avons mis à votre disposition, via une api, l'ensemble des données nécessaire à la réalisation de cette interface web, celle ci est disponible à l'adress suivante : http://localhost:8080/eqinov/front/test.
+
 Après réflexion avec notre service marketing, nous souhaitons afficher les données de la façon suivante :
 
 image::images/mockup.png[]
+
+Vous devrez respecter les règles graphiques suivantes mis en place dans notre application :
+
+image::images/Règles graphiques.JPG[]
 
 Nous souhaiterions connaître l'évolution de sa consommation mensuelle pour l'année 2019. Pour cela, vous devrez ajouter un tableau sous le graphique de consommation :
 
