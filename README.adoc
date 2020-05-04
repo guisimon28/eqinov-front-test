@@ -37,47 +37,18 @@ disable-banner:               false
 no-request-journal:           false
 verbose:                      false
 ----
-- de la version 8 du jdk
-- d'un outil de gestion de dépendances et de compilation, le projet est configuré pour utiliser maven ou gradle. A Eqinov, nous utilisons gradle. Voici les liens d'installation, des deux outils :
- * maven : https://maven.apache.org/maven-release/download.cgi
- * gradle : https://gradle.org/releases/
- 
-### Vérification du build
-Après avoir récupérer le projet sur github, vous pourrez vérifier que le projet fonctionne en tapant les commandes suivantes :
+l'api est disponible à l'adresse suivante : http://localhost:8080/eqinov/front/test que vous pouvez consulter avec une navigateur web pour vérifier le bon fonctionnement et les données.
 
-pour gradle
-[indent=0]
-----
-	$ ./gradlew bootRun
-----
- 
-pour maven
-[indent=0]
-----
-	$ ./mvn spring-boot:run
-----
-
-Spring boot doit indiqué le démarrage du serveur dans la console. En tapant http://localhost:8080, vous accéderez à l'ihm web du projet.
-
-image::images/ihm.jpg[]
-### Outils pour le développement
-Pour modifier le code et débugguer le projet, vous aurez besoin :
-
-- d'un environnement de développement eclipse ou intelij. A Eqinov, nous utilisons eclipse dont voici le lien d'installation : https://www.eclipse.org/downloads/packages/release/2019-12/r/eclipse-ide-enterprise-java-developers
-- du serveur tomcat, nous utilisons la version 9 : https://tomcat.apache.org/download-90.cgi
-
-Vous aurez par la suite besoin : 
-
-- d'importer les sources du projet dans votre environnement de développement
-- d'ajouter le serveur tomcat et d'ajouter le war eqinov-java-test au serveur tomcat (dans eclipse clic droit Add/remove)
-
-Lorsque que vous êtes dans votre EDI, un fois le serveur lancé, vous accedez au projet dans votre navigateur en tapant http://localhost:8080/eqinov-java-test. Vous pouvez ainsi démarrer/debugguer, votre projet pour les développements qui vont seront demandés.
-
-## Modifications demandées
+## Travail demandé
 ### Contexte
-Eqinov a signé le contrat pour un nouveau client dans le cadre de son activité de flexilibité des consommations électriques. Ce client, Papeterie d'Issy Les Moulineaux, nous a donné son accord pour étudier l'historique de ses consommations. Vous trouverez donc sur l'ihm, l'historique de sa consommation pour l'année 2019.
+Eqinov souhaite mettre à disposition d'un de ses clients les données issues de son application dreams qui gère la flexibilité des consommation électriques de ses clients. Le but de cette refonte est :
+- d'afficher les données de manière conviviale
+- d'avoir une interface responsive (visualisable sur PC, tablette et smartphone)
 
-### Exercice 1
+### Exercice 1 : réalisation d'interface web
+Nous avons mis à votre disposition via une api l'ensemble des données nécessaire à la réalisation de cette interface web, celle ci est disponible à l'adress suivante : http://localhost:8080/eqinov/front/test
+Après réflexion avec notre service marketing, nous souhaitons afficher les données de la façon suivante :
+image::images/mockup.png[]
 Nous souhaiterions connaître l'évolution de sa consommation mensuelle pour l'année 2019. Pour cela, vous devrez ajouter un tableau sous le graphique de consommation :
 
 - avec une colonne pour chaque mois
