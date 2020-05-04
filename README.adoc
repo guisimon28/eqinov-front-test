@@ -4,7 +4,7 @@ Bienvenue dans le projet de test de recrutement pour la société Eqinov. L'obje
 
 ## Pré-requis
 ### Installation de Java
-Pour les besoins du test, nous utilisons un framework java permettant de lancer une api mockée : java doit donc être installé sur votre machine. 
+Pour les besoins du test, nous utilisons un framework java permettant de lancer une api mockée : java doit être installé sur votre machine. 
 Pour vérifier, lancer la commande DOS suivante :
 ----
 java -version
@@ -12,13 +12,13 @@ java -version
 Le système doit vous indiquer la version de java installée sur votre poste. Si ce n'est pas le cas, rendez-vous à la page suivante pour l'installer : https://www.java.com/fr/download/
 
 ### Utilisation de l'api mockée
-l'api mockée retourne les données au format json qui vous seront utiles pour réaliser le premier exercice. 
+L'api mockée retourne les données au format json qui vous seront utiles pour réaliser le premier exercice. 
 Tout est disponible dans le dossier mock, où est présent le jar de wiremock (le framework que nous utilisons pour mockée une api).
 Pour lancer l'api, lancer la commande DOS suivante :
 ----
 java -jar wiremock-standalone-2.24.1.jar 
 ----
-la console DOS doit afficher l'écran suivant indiquant que tout fonctionne correctement :
+La console DOS doit afficher l'écran suivant indiquant que tout fonctionne correctement :
 ----
 SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
@@ -38,16 +38,16 @@ disable-banner:               false
 no-request-journal:           false
 verbose:                      false
 ----
-l'api est disponible à l'adresse suivante : http://localhost:8080/eqinov/front/test que vous pouvez consulter avec une navigateur web pour vérifier le bon fonctionnement et les données.
+L'api est disponible à l'adresse suivante : http://localhost:8080/eqinov/front/test que vous pouvez consulter avec une navigateur web pour vérifier le bon fonctionnement et les données.
 
 ## Travail demandé
 ### Contexte
-Eqinov souhaite mettre à disposition de ses clients un nouvel écran pour son application dreams qui gère la flexibilité des consommation électriques de ses clients. Les objectifs de ce nouvel écran est :
+Eqinov souhaite mettre à disposition de ses clients un nouvel écran pour son application dreams qui gère la flexibilité des consommations électriques de ses clients. Les objectifs de ce nouvel écran est :
 * d'afficher les données de manière conviviale
 * d'avoir une interface responsive (visualisable sur PC, tablette et smartphone)
 
 ### Stack technique 
-Nous souhaitons réaliser cet nouvel écran avec les technologies suivantes :
+Nous souhaitons réaliser ce nouvel écran avec les technologies suivantes :
 * HTML 5
 * CSS 3
 * javascript
@@ -61,7 +61,7 @@ En consultation avec notre service marketing, nous souhaitons afficher les donn�
 
 image::images/mockup.png[]
 
-Vous devrez respecter les règles graphiques suivantes mis en place dans notre application :
+Vous devrez respecter les règles graphiques suivantes, mis en place dans notre application :
 
 image::images/Règles graphiques.JPG[]
 
