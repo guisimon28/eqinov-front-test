@@ -41,14 +41,16 @@ l'api est disponible à l'adresse suivante : http://localhost:8080/eqinov/front/
 
 ## Travail demandé
 ### Contexte
-Eqinov souhaite mettre à disposition d'un de ses clients les données issues de son application dreams qui gère la flexibilité des consommation électriques de ses clients. Le but de cette refonte est :
+Eqinov souhaite mettre à disposition de ses clients un nouvel écran pour son application dreams qui gère la flexibilité des consommation électriques de ses clients. Les objectifs de ce nouvel écran est :
 - d'afficher les données de manière conviviale
 - d'avoir une interface responsive (visualisable sur PC, tablette et smartphone)
 
 ### Exercice 1 : réalisation d'interface web
 Nous avons mis à votre disposition via une api l'ensemble des données nécessaire à la réalisation de cette interface web, celle ci est disponible à l'adress suivante : http://localhost:8080/eqinov/front/test
 Après réflexion avec notre service marketing, nous souhaitons afficher les données de la façon suivante :
+
 image::images/mockup.png[]
+
 Nous souhaiterions connaître l'évolution de sa consommation mensuelle pour l'année 2019. Pour cela, vous devrez ajouter un tableau sous le graphique de consommation :
 
 - avec une colonne pour chaque mois
